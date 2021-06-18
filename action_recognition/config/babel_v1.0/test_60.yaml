@@ -1,0 +1,25 @@
+# feeder
+feeder: feeders.feeder.Feeder
+test_feeder_args:
+  data_path: ./data/release/val_ntu_sk_60.npy
+  label_path: ./data/release/val_label_60.pkl
+  debug: False
+
+# model
+model: model.agcn.Model
+model_args:
+  num_class: 60
+  num_point: 25
+  num_person: 1
+  graph: graph.ntu_rgb_d.Graph
+  graph_args:
+    labeling_mode: 'spatial'
+
+# test
+phase: test
+device: [0]
+test_batch_size: 128
+weights: ./ckpts/ntu_sk_60_agcn_joint_const_lr_1e-3-17-6390.pt
+
+work_dir: ./work_dir/babel_v1.0/test_runs/test_ntu_sk_60_agcn_joint_const_lr_1e-3
+save_score: True

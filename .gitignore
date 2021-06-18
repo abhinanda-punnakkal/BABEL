@@ -1,0 +1,17 @@
+# System
+babel-env
+
+# Temp files
+*.DS_Store
+.swp
+__pycache__
+notebooks/.ipynb_checkpoints
+          	
+# Data    	
+data/babel_v1.0_release
+ckpts     	
+          	
+# Logging 	
+wandb
+runs
+work_dir

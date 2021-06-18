@@ -1,0 +1,43 @@
+work_dir: ./work_dir/babel_v1.0/ntu_sk_120_agcn_joint_const_lr_1e-3
+model_saved_name: ./runs/babel_v1.0/ntu_sk_120_agcn_joint_const_lr_1e-3
+
+# feeder
+feeder: feeders.feeder.Feeder
+train_feeder_args:
+  data_path: ./data/release/train_ntu_sk_120.npy
+  label_path: ./data/release/train_label_120.pkl
+  debug: False
+  random_choose: False
+  random_shift: False
+  random_move: False
+  window_size: -1
+  normalization: False
+
+test_feeder_args:
+  data_path: ./data/release/val_ntu_sk_120.npy
+  label_path: ./data/release/val_label_120.pkl
+
+# model
+model: model.agcn.Model
+model_args:
+  num_class: 120
+  num_person: 1 
+  num_point: 25
+  graph: graph.ntu_rgb_d.Graph
+  graph_args:
+    labeling_mode: 'spatial'
+
+#optim
+weight_decay: 0.0001
+base_lr: 0.001
+step: []
+
+# training
+device: [0]
+optimizer: 'Adam'
+batch_size: 64
+test_batch_size: 64
+num_epoch: 250
+nesterov: True
+
+# weights: /ps/project/conditional_action_gen/2s_agcn/runs/babel_v1.0/ntu_sk_120_agcn_joint_const_lr_1e-3-49-23450.pt
