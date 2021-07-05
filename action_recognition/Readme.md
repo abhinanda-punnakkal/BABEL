@@ -44,11 +44,11 @@ To train a model with CE loss:
 
 From the top directory `babel/`, enter the following to train a model with the Cross-Entropy loss:
 
-```python action_recognition/main.py --config action_recognition/config/babel_v1.0/train_60.yaml```
+```python action_recognition/train_test.py --config action_recognition/config/babel_v1.0/train_60.yaml```
 
 To train a model with Focal loss [3] with class-balancing [4]: 
 
-```python action_recognition/main_wl.py --config action_recognition/config/babel_v1.0/train_60_wfl.yaml```
+```python action_recognition/train_test.py --config action_recognition/config/babel_v1.0/train_60_wfl.yaml```
 
 You can use the repsective configuration files inside `config/babel_v1.0` to train the model with `120` classes in both ways.
 
