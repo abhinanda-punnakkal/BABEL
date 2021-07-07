@@ -588,7 +588,7 @@ class Processor():
                 self.val_writer.add_scalar('acc', accuracy, self.global_step)
                 self.val_writer.add_scalar('per_class_acc', per_class_acc , self.global_step)
 
-            score_dict = list(zip(
+            pred_scores = list(zip(
                 self.data_loader[ln].dataset.label[1],  # sid
                 self.data_loader[ln].dataset.sample_name,  # seg_id
                 self.data_loader[ln].dataset.label[2],  # chunk_id
@@ -603,7 +603,7 @@ class Processor():
             if save_score:
                 with open('{}/epoch{}_{}_score.pkl'.format(
                         self.arg.work_dir, epoch + 1, ln), 'wb') as f:
-                    pickle.dump(score_dict, f)
+                    pickle.dump(pred_scores, f)
         return wb_dict
 
     def start(self):
