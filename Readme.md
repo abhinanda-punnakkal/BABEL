@@ -8,7 +8,7 @@
 > [Abhinanda R. Punnakkal\*](https://ps.is.tuebingen.mpg.de/person/apunnakkal), [Arjun Chandrasekaran\*](https://ps.is.tuebingen.mpg.de/person/achandrasekaran), [Nikos Athanasiou](https://ps.is.tuebingen.mpg.de/person/nathanasiou), [Alejandra Quiros-Ramirez](https://ps.is.tuebingen.mpg.de/person/aquiros), [Michael J. Black](https://ps.is.tuebingen.mpg.de/person/black). 
 > \* denotes equal contribution
 
-[Project Website](https://babel.is.tue.mpg.de) | [Paper](https://arxiv.org/pdf/2106.09696.pdf) | [Video](https://keeper.mpdl.mpg.de/f/9d733e2eb1ec4914970b/) | [Poster](https://babel.is.tue.mpg.de/media/upload/CVPR_2021_BABEL_poster.pdf) 
+[Project Website](https://babel.is.tue.mpg.de) | [Paper](https://arxiv.org/pdf/2106.09696.pdf) | [Video](https://www.youtube.com/watch?v=BYWxvjKpCqA) | [Poster](https://babel.is.tue.mpg.de/media/upload/CVPR_2021_BABEL_poster.pdf) 
 
 ---
 
@@ -36,21 +36,23 @@ Please see [`action_recognition/`](action_recognition/) for more details.
 
 ### Acknowledgements
 
+We thank the [Software Workshop](https://is.mpg.de/en/software-workshop) at MPI for building the action recognition test set evaluation web server. 
 The notebooks in this repo are inspired by the those provided by [AMASS](https://github.com/nghorbani/amass). 
-The Action Recognition code is based on the [2s-AGCN](https://github.com/lshiwjx/2s-AGCN) implementation. 
+The Action Recognition code is based on the [2s-AGCN](https://github.com/lshiwjx/2s-AGCN) [2] implementation. 
 
 
 ### References 
 
-[1] Mahmood, Naureen, et al. "AMASS: Archive of motion capture as surface shapes." Proceedings of the IEEE/CVF International Conference on Computer Vision. 2019.
+[1] Mahmood, Naureen, et al. "AMASS: Archive of motion capture as surface shapes." Proceedings of the IEEE/CVF International Conference on Computer Vision. 2019. <br>
+[2] Shi, Lei, et al. "Two-stream adaptive graph convolutional networks for skeleton-based action recognition." Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition. 2019. 
 
 ### License
 
-Software Copyright License for non-commercial scientific research purposes. Please read carefully the terms and conditions and any accompanying documentation before you download and/or use the AMASS dataset, and software, (the "Model & Software"). By downloading and/or using the Model & Software (including downloading, cloning, installing, and any other use of this GitHub repository), you acknowledge that you have read these terms and conditions, understand them, and agree to be bound by them. If you do not agree with these terms and conditions, you must not download and/or use the Model & Software. Any infringement of the terms of this agreement will automatically terminate your rights under this License.
+Software Copyright License for non-commercial scientific research purposes. Please read carefully the terms and conditions and any accompanying documentation before you download and/or use the BABEL dataset, and software, (the "Model & Software"). By downloading and/or using the Model & Software (including downloading, cloning, installing, and any other use of this GitHub repository), you acknowledge that you have read these terms and conditions, understand them, and agree to be bound by them. If you do not agree with these terms and conditions, you must not download and/or use the Model & Software. Any infringement of the terms of this agreement will automatically terminate your rights under this License.
 
 ### Contact
 
-The code in this repository is developed by [Abhinanda Punnakkal](https://www.is.mpg.de/person/apunnakkal) and [Arjun Chandrasekaran](https://www.is.mpg.de/person/achandrasekaran).
+The code in this repository is developed by [Abhinanda Punnakkal](https://www.is.mpg.de/person/apunnakkal) and [Arjun Chandrasekaran](https://www.is.mpg.de/person/achandrasekaran), and tested by [Nikos Athanasiou](https://www.is.mpg.de/person/nathanasiou).
 
 If you have any questions you can contact us at babel@tue.mpg.de.
 

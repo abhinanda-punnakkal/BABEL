@@ -53,7 +53,7 @@ To train a model with Focal loss [3] with class-balancing [4]:
 You can use the repsective configuration files inside `config/babel_v1.0` to train the model with `120` classes in both ways.
 
 
-### Inference 
+#### Inference 
 
 Provide the path to the trained model in the `weights` key in the respective config file. 
 
@@ -83,11 +83,6 @@ Performing inference on the validation set should result in the following perfor
 **Note:** The models are *only* trained with dense labels from `train.json` (See [project webpage](https://babel.is.tue.mpg.de/data.html) for more details about the data). 
 
 
-### Challenge 
-
-Coming soon!
-
-
 ### Metrics 
 
 **Description**
@@ -98,6 +93,12 @@ Coming soon!
     2. It also accounts for the possible association of multiple action categories with a single input movement sequence. For instance, a person `walking in a circle` is mapped to the two action categories `walk` and `circular movement`. 
     Ideal models will predict high scores for all the categories relevant to the movement  sample. 
 3. **Top-1-norm** is the mean `Top-1` across categories. The magnitude of `Top-1-norm` - `Top-1` illustrates the class-specific bias in the model performance. In Babel, it reflects the impact of class imbalance on learning. 
+
+
+### Challenge 
+
+Coming soon!
+
 
 
 ### References 

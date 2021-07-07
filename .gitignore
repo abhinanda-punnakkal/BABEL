@@ -3,12 +3,17 @@ babel-env
 
 # Temp files
 *.DS_Store
-.swp
+*.swp
 __pycache__
 notebooks/.ipynb_checkpoints
           	
 # Data    	
 data/babel_v1.0_release
+action_recognition/data/release
+
+# Predictions
+action_recognition/challenge/*.pkl
+action_recognition/challenge/*.npz
 ckpts     	
           	
 # Logging 	
