@@ -17,10 +17,18 @@ Each sample is a 5-second chunk @ 30fps, resulting in `n_frames=150`.
 Pre-preprocessing of the skeleton joints follows Shi et al. [2]. Download the pre-processed sample features and corresponding labels: 
 
 ```
+# BABEL Dense
 cd data/
 wget https://human-movement.is.tue.mpg.de/babel_feats_labels.tar.gz
 tar -xzvf babel_feats_labels.tar.gz -C ./
+
+# BABEL Dense+Extra
+wget https://human-movement.is.tue.mpg.de/babel_dense_and_extra_feats_labels.tar.gz
+tar -xzvf babel_dense_and_extra_feats_labels.tar.gz -C ./
 ```
+
+Note: We only train and test with Dense annotations. For details regarding Dense and Extra annotations, please see BABEL's [Data page](https://babel.is.tue.mpg.de/data.html).
+
 
 ### Training and Inference 
 
