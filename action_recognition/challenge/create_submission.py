@@ -113,8 +113,8 @@ if __name__ == '__main__':
 							description='Predicted test scores --> Submission to server')
 	parser.add_argument(
 			'--pred_path',
-			default='./test_pred.pkl',
-			help='Path to file containing model predictions (saved to disk by main.py or main_wl.py).')
+			default='./epoch1_test_score.pkl',
+			help='Path to file containing model predictions (saved to disk by train_test.py.')
 	parser.add_argument(
 			'--sub_path',
 			default='./test_sub.npz',
