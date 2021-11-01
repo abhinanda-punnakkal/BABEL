@@ -105,8 +105,16 @@ Performing inference on the validation set should result in the following perfor
 
 ### Challenge 
 
-Coming soon!
+To make a submission: 
 
+1. Store the predictions (variable `pred_scores` in [L591](https://github.com/abhinanda-punnakkal/BABEL/blob/6454163e196fc6400e1b8232dffb651341ed7c14/action_recognition/train_test.py#L591) of `train_test.py`) as a python pickle. 
+    - `pred_scores` is list of tuples, each containing the following 4 elements — (sequence ID, segment ID, chunk ID, score). Here score is an `np.array` of size `(N, C)` where `N` is # samples in the test set and `C` is the # classes. 
+    - By default, `train_test.py` stores this pickle file as `<work_dir>/epoch1_test_score.pkl` (see [L604](https://github.com/abhinanda-punnakkal/BABEL/blob/6454163e196fc6400e1b8232dffb651341ed7c14/action_recognition/train_test.py#L606)). 
+2. In the command line, type the following commands: 
+    1. `cd action_recognition/challenge/`
+    2. `python create_submission.py --pred_path <work_dir>/epoch1_test_score.pkl --sub_path <path on disk to write submission file>`
+    - Note: This code assumes that the GT test samples (`test_label_{60, 120}.pkl`) are present in the following path: `action_recognition/data/release/`
+3. Submit the `.npz`  submission file to the BABEL Action Recognition Challenge [evaluation server](https://babel-evaluation.is.tuebingen.mpg.de/). 
 
 
 ### References 
